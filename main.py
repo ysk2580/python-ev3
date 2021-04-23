@@ -251,7 +251,7 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 #     if TS.pressed() == 1:
 #         ev3.speaker.set_volume(10000)
 #         ev3.speaker.say('멈춰')
-# B.run(300)
+# B.run(500)
 # C.run(300)
 # wait(1600)
 # B.run(300)
@@ -270,4 +270,5 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 # C.run(-240)
 # wait(560)
 # if CS.color() == Color.YELLOW:
-#     ev3.speaker.say('YELLOW')
+#     ev3.speaker.say('YELLOW'
+
