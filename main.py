@@ -272,3 +272,4 @@ C = Motor(Port.C)
 # if CS.color() == Color.YELLOW:
 #     ev3.speaker.say('YELLOW')
 
+유승관
