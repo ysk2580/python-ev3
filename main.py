@@ -123,7 +123,7 @@ ev3 = EV3Brick()
 #         Motor(Port.B).stop(Stop.BRAKE)
 #         Motor(Port.C).stop(Stop.BRAKE)
 
-s1 = ColorSensor(Port.S1)
+# s1 = ColorSensor(Port.S1)
 s2 = ColorSensor(Port.S2)
 
 
@@ -142,8 +142,7 @@ s2 = ColorSensor(Port.S2)
 #         Motor(Port.B).run(500)
 
 # s4=UltrasonicSensor(Port.S4)
-B = Motor(Port.B)
-C = Motor(Port.C)
+
 #s3 = GyroSensor(Port.S3)
 
 # B = Motor(Port.B)
@@ -273,15 +272,20 @@ C = Motor(Port.C)
 # if CS.color() == Color.YELLOW:
 #     ev3.speaker.say('YELLOW')
 
-B.run(500)
-C.run(500)
-if s2.color() == Color.RED:
-    ev3.speaker.say('RED')
-elif s2.color() == Color.YELLOW:
-    ev3.speaker.say('YELLOW')
-elif s2.color() == Color.GREENN:
-    ev3.speaker.say('GREEN')
-elif s2.color() == Color.BLUE:
-    ev3.speaker.say('BLUE')
+B = Motor(Port.B)
+C = Motor(Port.C)
+# s1 = ColorSensor(Port.S1)
+s2 = ColorSensor(Port.S2)
 
-    
+
+ev3.speaker.set_volume(10000)
+while True:
+    B.run(500)
+    C.run(500)
+    if s2.color() == Color.RED:
+        ev3.speaker.say('RED')
+    elif s2.color() == Color.YELLOW:
+        ev3.speaker.say('YELLOW')
+    elif s2.color() == Color.BLUE:
+        ev3.speaker.say('BLUE')
+
