@@ -123,7 +123,7 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 #         Motor(Port.B).stop(Stop.BRAKE)
 #         Motor(Port.C).stop(Stop.BRAKE)
 
-# CS = ColorSensor(Port.S2)
+s2 = ColorSensor(Port.S2)
 
 
 
@@ -141,8 +141,8 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 #         Motor(Port.B).run(500)
 
 # s4=UltrasonicSensor(Port.S4)
-# # B = Motor(Port.B)
-# # C = Motor(Port.C)
+B = Motor(Port.B)
+C = Motor(Port.C)
 #s3 = GyroSensor(Port.S3)
 
 # B = Motor(Port.B)
@@ -270,5 +270,5 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 # C.run(-240)
 # wait(560)
 # if CS.color() == Color.YELLOW:
-#     ev3.speaker.say('YELLOW'
+#     ev3.speaker.say('YELLOW')
 
