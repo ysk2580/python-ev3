@@ -123,6 +123,7 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 #         Motor(Port.B).stop(Stop.BRAKE)
 #         Motor(Port.C).stop(Stop.BRAKE)
 
+s1 = ColorSensor(Port.S1)
 s2 = ColorSensor(Port.S2)
 
 
@@ -272,4 +273,8 @@ C = Motor(Port.C)
 # if CS.color() == Color.YELLOW:
 #     ev3.speaker.say('YELLOW')
 
-유승관
+B.run(500)
+C.run(500)
+if CS.color() == Color.RED:
+    ev3.speaker.say('RED')
+    
