@@ -15,7 +15,7 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 
 
 # Create your objects here.
-# ev3 = EV3Brick()
+ev3 = EV3Brick()
 
 
 # Write your program here.
@@ -275,6 +275,13 @@ C = Motor(Port.C)
 
 B.run(500)
 C.run(500)
-if CS.color() == Color.RED:
+if s2.color() == Color.RED:
     ev3.speaker.say('RED')
+elif s2.color() == Color.YELLOW:
+    ev3.speaker.say('YELLOW')
+elif s2.color() == Color.GREENN:
+    ev3.speaker.say('GREEN')
+elif s2.color() == Color.BLUE:
+    ev3.speaker.say('BLUE')
+
     
